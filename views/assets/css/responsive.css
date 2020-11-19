@@ -1,0 +1,301 @@
+@media screen and (max-width: 1679px) {
+
+}
+
+
+@media screen and (max-width: 1199px){ /* 1024 *660 */
+	h2{ font-size: 36px !important; }
+	h3{ font-size: 34px !important; }
+	.owl-carousel .owl-stage-outer, .image-slider-content{ height: 400px; }
+	.fun-facts span.number{ font-size: 28px; }
+	.fun-facts span.what-do{ font-size: 15px; }
+	.video h3{ line-height: 40px; }
+	.testimonial-background img{ height: 180px; }
+	.customer_name{ font-size: 25px; }
+	.panel-info-title{ font-size: 20px; }
+	.panel-footer{ padding: 20px 0; }
+	.highlight_post {
+	    /*background-color: #d6d6ea;*/
+	    display: flex;
+	    width: 100%;
+	    margin-bottom: 10px;
+	}
+	.highlight_post_img{
+	    width: 150px;
+	    height: 100px;
+	    margin-right: 20px;
+	}
+	.wp_slider .slideshow .slider-2 .owl-nav{
+		top: 130px;
+	}
+}
+
+@media screen and (max-width: 991px){ /* 768 */ 
+	.header-bar-top, .header-bar-bottom{ display: none; }
+	.nav-logo{ display: flex; }
+	.header-bar{ background-color: rgba(255, 255, 255, 0.8) !important; }
+	.button{ padding: 13px 16px; }
+	.video-con-title{ font-size: 28px !important; }
+	.highlight-post a{ width: 100% !important; }
+	.panel-info .panel-body a img {
+	    width: 80%;
+	    height: 300px;
+	    margin: auto;
+	}
+	.col-md-12{ margin: auto; }
+	.box3 img {
+	    width: 100%;
+	}
+	.wp_slider {
+	    margin-top: 65px;
+	}
+
+}
+
+
+@media screen and (max-width: 767px){ /* 640 */
+	.owl-carousel .owl-stage-outer, .image-slider-content{ height: 300px; }
+	.bg-gray .container .row{
+		display: block;
+		margin: 15px;
+	}
+	.section-space .section-title div p{
+		padding: 15px;
+	}
+	.vertical-align-middle.service-img, .vertical-align-middle.services {
+	    width: 100%;
+	}
+	.services h2{
+		text-align: center;
+	}
+	.vertical-align-middle.video-img, .vertical-align-middle.video-con{
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	.section-space.bg-gray.video{
+		height: auto;
+	}
+	.video-con-title {
+	    padding-top: 20px;
+	}
+	.video-con-content .space {
+	    text-align: center;
+	}
+	.box3{
+		display: flex;
+	}
+	.box3 img{
+		width: 100%;
+		height: 105px;
+		object-fit: cover;
+		max-width: 120px;
+	}
+	.box3 .box-content{
+		opacity: 1;
+		top: 0;
+		bottom: 0;
+		position: unset;
+	}
+	.box3 .box-content .description a{
+		color: #111111;
+		text-align: left;
+	}
+	.wp_slider .slideshow .slider-2 .owl-nav{
+		top: 100px;
+	}
+	.wp_slider .slideshow .slider-2 .owl-nav button{
+		font-size: 50px;
+	}
+	.text-left.copyright1{
+		text-align: center;
+	}
+	footer .social-links {
+	    float: unset;
+	}
+}
+/*body{background-color: red;}*/
+
+
+@media screen and (max-width: 639px){ /* 540 */
+	.customer{
+		display: block;
+	}
+	.customer_img{
+		max-width: 100%;
+	}
+	.customer_txt{
+		margin-left: 0px;
+	}
+	.references .references-slider .slider-2 .owl-stage-outer {
+	    height: auto;
+	}
+	.customer_name {
+	    padding-top: 20px;
+	    text-align: center;
+	}
+	.customer_comment{
+		text-align: center;
+	}
+	.references .references-slider{
+		height: 290px;
+	}
+}
+
+@media screen and (max-width: 539px){ /* 450 */
+
+}
+
+
+@media screen and (max-width: 439px){ /* 320 */
+	h2{ font-size: 30px !important; }
+	.fun-facts span.number{ font-size: 25px !important; }
+	.owl-carousel .owl-stage-outer, .image-slider-content{
+		height: 300px;
+	}
+	.gallery{
+		padding-bottom: 0px;
+	}
+	.recent-news{ margin: 0; }
+	.highlight_post{ padding: 0; }
+	.highlight_post_img{
+		width: 100%;
+		height: 200px;
+	}
+	.highlight_post{ padding-bottom: 20px; }
+	.highlight_post_txt p{
+		display: none;
+	}
+	.highlight_post{ display: block; }
+	.bg-gray .container .row{ margin: 0; }
+	.panel-info .panel-body a img{ width: 100%; }
+	.references .testimonial-background{ box-shadow: 0px 5px 20px #fff; }
+	.question{ font-size: 14px; }
+	.panel-info .text-center.panel-info-title a{ font-size: 20px; }
+	.customer_name{ font-size: 18px; }
+	.video h3 {
+	    line-height: 30px;
+	    font-size: 23px !important;
+	}
+	p.space {
+	    margin-top: 20px;
+	}
+	.recent-news h2 {
+	    padding-bottom: 40px;
+	}
+	.form {
+	    margin: 15px;
+	}
+	.big-wrapper{ margin: 0px; }
+	.wp-section-space{ padding: 0px; }
+	.wrapper{
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+	.wp-block-image img {
+	    max-width: 100%;
+	}
+	.blog-post{
+		padding-top: 40px;
+		margin-bottom: 0;
+	}
+	.blog-post .gallery-single-image a img{
+		height: 200px;
+		object-fit: cover;
+	}
+	.images.gallery-single-image{ height: 200px; }
+	.images.gallery-single-image{ margin-bottom: 10px; }
+	.cate-title {
+	    font-size: 20px !important;
+	    margin-bottom: 10px;
+	}
+	.btn_view_full{ text-align: center; }
+	.cate-posts-navi {
+	    padding-top: 40px;
+	    padding-bottom: 30px;
+	}
+	.blog-post p:nth-child(5){
+		display: none;
+	}
+	.video_img {
+	    height: 200px;
+	}
+	.btn_play i{
+	    font-size: 50px !important;
+	}
+	.col-md-6.vertical-align-middle.service-img{
+		height: 200px;
+	}
+	.why-us{ padding: 15px; }
+	.gallery .gallery-filters li.filter{ padding: 10px 20px; }
+	.row.content-padding.contact-page {
+	    display: block;
+	}
+	.vertical-align-middle {
+	    width: 100%;
+	    height: auto;
+	}
+	.contact-box h3 {
+	    font-size: 20px !important;
+	}
+	.contact-logo img {
+	    padding-bottom: 35px;
+	}
+	.contact-wrapper {
+	    padding: 0;
+	}
+	.wp_slider {
+	    margin-top: 65px;
+	}
+	.slideshow {
+	    height: 200px;
+	}
+	.image-slider-content {
+	    height: 200px;
+	}
+	.wp_slider .slideshow .slider-2 .owl-nav{
+		top: 65px;
+	}
+	.wp_slider .slideshow .slider-2 .owl-nav button{
+		font-size: 40px;
+	}
+	.wrapper_single .wrapper .row{
+		height: 300px;
+	}
+	.image_single {
+	    height: 300px !important;
+	}
+	.wp-caption img{
+		height: auto;
+	}
+	img.aligncenter {
+	    height: auto;
+	}
+	.panel-heading .panel-title {
+	    font-size: 25px !important;
+	}
+	.form-contact{
+	    margin: 0;
+	}
+/*	.effect6 img{
+		width: 100px;
+		height: 100px;
+		object-fit: cover;
+		object-position: center;
+	}
+	.effect6 a{
+		visibility: unset;
+		opacity: 1;
+		color: #111111;
+		bottom: 0;
+		top: 50px;
+	}*/
+	.panel.panel-default{
+		height: 880px;
+	}
+}
+
+
+@media screen and (max-width: 374px){ /* iphone X */
+
+}
+
