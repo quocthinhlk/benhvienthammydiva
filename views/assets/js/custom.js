@@ -38,7 +38,7 @@ jQuery(function () {
     
 });
 
-/* Back to top */
+/* Back to top button */
 jQuery(window).scroll(function(){
     if (window.pageYOffset > 100){
         jQuery(".go-to-top").css("display","flex");
@@ -47,9 +47,9 @@ jQuery(window).scroll(function(){
     }
 });
 
+/* Scroll to top */
 jQuery(document).ready(function ($) {
     "use strict";
-    /* Scroll to top */
     $('.go-to-top').on('click', function () {
         $('html, body').animate({scrollTop: 0}, 800);
         return false;
@@ -87,4 +87,23 @@ jQuery(document).ready(function() {
       jQuery(this).addClass("fa-angle-right");
     }
   });
+});
+
+/* Popup view video */
+jQuery(function() {
+    //----- OPEN
+    jQuery('[data-popup-open]').on('click', function(e)  {
+        var targeted_popup_class = jQuery(this).attr('data-popup-open');
+        jQuery('[data-popup="' + targeted_popup_class + '"]').fadeIn(350);
+ 
+        e.preventDefault();
+    });
+ 
+    //----- CLOSE
+    jQuery('[data-popup-close]').on('click', function(e)  {
+        var targeted_popup_class = jQuery(this).attr('data-popup-close');
+        jQuery('[data-popup="' + targeted_popup_class + '"]').fadeOut(350);
+ 
+        e.preventDefault();
+    });
 });

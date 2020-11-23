@@ -1,23 +1,20 @@
 <?php get_header(); ?>
 <div class="big-wrapper wrapper_single">
+	<div class="page-header ph-align-center page-header-centered" style="background-image: url(<?php echo get_bloginfo('url').'/wp-content/themes/benhvienthammydiva/views/assets/images/vien-tham-my-diva-banner.jpg' ?>);">
+		<div class="container">
+			<div class="breadcrumb"><a href="<?php echo get_bloginfo('url') ?>">Trang chủ</a> &nbsp; / &nbsp; <span class="current-item"><?php the_title(); ?></span></div>
+		</div>
+	</div>
 	<div class="wrapper">
-		<div class="row">
-			<div class="col-md-12">
-				<div class="images">
-					<div class="image image_single" style="background-image: url(<?php the_post_thumbnail_url(); ?>);">
-					</div> 
-				</div> 
-			</div> 
-		</div> 
 		<div class="container"> 
 			<div class="row section-space wp-section-space single_post_detail">
-				
 				<div class="col-md-8">
 					<?php if (have_posts()) : ?>
 						<?php while (have_posts()) : the_post(); ?>
 							<article class="blog-post">
 								<p><?php echo get_the_date(); ?></p>
-								<h2><?php the_title(); ?></h2> 
+								<h1><?php the_title(); ?></h1>
+								<img src="<?php the_post_thumbnail_url(); ?>">
 								<div class="blog-post-content"> 
 									<p><?php the_content() ?></p>   
 								</div> 

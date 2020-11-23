@@ -18,43 +18,30 @@
   }
   ?>
   <header class="<?php echo $class_header_bar; ?>">
-    <div class="header-bar-top">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="header-bar-top-element">
-              <i class="fas fa-phone-alt"></i><a href="tel:<?php the_field('phone', 'option'); ?>"><?php the_field('phone', 'option'); ?></a>
-            </div>
-            <div class="header-bar-top-element">
-              <i class="fas fa-envelope"></i><a href="mailto:<?php the_field('email', 'option'); ?>"><?php the_field('email', 'option'); ?></a>
-            </div>
-          </div> 
-        </div> 
-      </div> 
-    </div>
     <div class="header-bar-bottom"> 
       <div class="container"> 
         <div class="row"> 
           <div class="col-md-12"> 
-            <div class="logo"> 
-              <a href="<?php echo get_bloginfo('url') ?>"> 
-                <div class="logo-middle-helper"></div>
-                <?php $image = get_field('logo', 'option'); ?>
-                <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-              </a> 
-            </div> 
-            <nav class="nav-menu">
-            	<?php
-      				wp_nav_menu(
-      					array(
-      						'theme_location'     => "nav-main-menu",
-      						'menu_class'        => "menu",
-      						'container'         => "",
-      						'menu_id'			=> "menu",
-      					)
-      				);
-      				?>
-          </nav>
+            <div class="nav_menu">
+              <div class="logo"> 
+                <a href="<?php echo get_bloginfo('url') ?>"> 
+                  <?php $image = get_field('logo', 'option'); ?>
+                  <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                </a> 
+              </div> 
+              <nav class="nav-menu">
+                <?php
+                wp_nav_menu(
+                  array(
+                    'theme_location'     => "nav-main-menu",
+                    'menu_class'        => "menu",
+                    'container'         => "",
+                    'menu_id'     => "menu",
+                  )
+                );
+                ?>
+            </nav>
+            </div>
         </div> 
       </div> 
     </div> 

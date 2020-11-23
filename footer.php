@@ -1,9 +1,32 @@
 <footer class="footer">
   <div class="main-footer">
     <div class="container">
+      <div class="col-sm-5">
+        <h4>Giới thiệu viện thẩm mỹ Diva</h4>
+        <p class="footer_text">Viện Thẩm Mỹ DIVA là trung tâm thẩm mỹ và chăm sóc sắc đẹp hiện đại, với sứ mệnh cung cấp các dịch vụ chăm sóc sắc đẹp hàng đầu. Lấy chất lượng dịch vụ làm mục tiêu cốt lõi để tồn tại, Viện Thẩm Mỹ DIVA luôn cam kết mang đến cho khách hàng công nghệ thẩm mỹ tiên tiến nhất, giúp người Việt có cơ hội sử dụng dịch vụ thẩm mỹ đạt chuẩn Hàn Quốc ngay tại Việt Nam. Sự hài lòng của bạn chính là mục tiêu mà chúng tôi luôn theo đuổi.</p>
+      </div>
+      <div class="col-sm-3">
+        <h4>Liên kết</h4>
+        <ul class="contact">
+          <?php 
+          $args = array(
+              'type'      => 'post',
+              'parent'    => '',
+              'hide_empty' => 1,
+          );
+          $categories = get_categories( $args );
+            foreach ($categories as $categorie) {
+              $name         = $categorie->name;
+              $slug         =   $categorie->slug;
+              $post_number    = $categorie->category_count;
+            ?>
+            <li><a href="<?php echo get_bloginfo('url').'/category/'.$slug; ?>"><?php echo $name; ?></a></li>
+            <?php } ?>
+        </ul>
+      </div>
       <div class="col-sm-4">
         <h4>Liên hệ</h4>
-        <ul>
+        <ul class="contact">
           <li>
             <i class="fas fa-envelope"></i>
             <a href="">Mail: <?php the_field('email', 'option'); ?></a>
@@ -20,37 +43,6 @@
             <i class="fas fa-map-marker-alt"></i>
             <a href="">Địa chỉ: <?php the_field('address', 'option'); ?></a>
           </li>
-        </ul>
-      </div>
-      <div class="col-sm-4 tags clearfix">
-        <h4>Tags</h4>
-        <ul>
-          <?php 
-          $tags = get_tags(array(
-            'hide_empty' => false
-          ));
-          foreach ($tags as $tag) { ?>
-            <li><?php echo $tag->name ?></li>
-          <?php } ?>
-        </ul>
-      </div>
-      <div class="col-sm-4">
-        <h4>Danh mục</h4>
-        <ul>
-          <?php 
-          $args = array(
-              'type'      => 'post',
-              'parent'    => '',
-              'hide_empty' => 1,
-          );
-          $categories = get_categories( $args );
-            foreach ($categories as $categorie) {
-              $name         = $categorie->name;
-              $slug         =   $categorie->slug;
-              $post_number    = $categorie->category_count;
-            ?>
-            <li><a href="<?php echo get_bloginfo('url').'/category/'.$slug; ?>"><?php echo $name; ?></a></li>
-            <?php } ?>
         </ul>
       </div>
     </div>

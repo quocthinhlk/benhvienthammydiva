@@ -1,7 +1,7 @@
 jQuery(document).ready(function(){
   jQuery('.slider-1').owlCarousel({
     stopOnHover : true,
-    autoplay: false,
+    autoplay: true,
     lazyLoad: true,
     loop:true,
     autoHeight: true,
@@ -27,7 +27,7 @@ jQuery(document).ready(function(){
   });
   jQuery('.slider-2').owlCarousel({
     stopOnHover : true,
-    autoplay: false,
+    autoplay: true,
     lazyLoad: true,
     loop:true,
     autoHeight: false,
@@ -53,7 +53,7 @@ jQuery(document).ready(function(){
   });
   jQuery('.slider-3').owlCarousel({
     stopOnHover : true,
-    autoplay: false,
+    autoplay: true,
     lazyLoad: true,
     loop:true,
     autoHeight: true,
